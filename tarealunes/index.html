@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="csss/estilo.css">
+        <title>tarjetas de perfiles</title>
+</head>
+<body>
+
+        <div class="contenedor-principal">
+                <section class="seccion-formulario">
+                        <h2>Datos</h2>
+
+                        <div class="campo">
+                                <label>Nombre y Apellido:</label>
+                                <input type="text" id="entradaNombre" placeholder="Ej: Alexis Pérez">
+                        </div>
+
+                        <div class="campo">
+                                <label>Cargo:</label>
+                                <input type="text" id="entradaCargo" placeholder="Ej: Administrador ">
+                        </div>
+
+                        <div class="campo">
+                                <label>Color favorito:</label>
+                                <input type="color" id="entradaColor" value="#4a90e2">
+                        </div>
+
+                        <button id="botonGenerar">crear tarjeta</button>
+                </section>
+
+                <section class="seccion-previsualizacion">
+                        <h2>Vista previa de tu tarjeta</h2>
+                        <div class="tarjeta" id="tarjetaVistaPrevia">
+                                <div class="foto-perfil">👤</div>
+                                <h3 id="textoNombre">Tu nombre</h3>
+                                <p id="textoCargo">Tu cargo</p>
+                        </div>
+                </section>
+        </div>
+
+        <hr>
+
+        <section class="seccion-galeria">
+                <h2>Tarjetas guardadas</h2>
+                <div id="contenedorGaleria" class="rejilla-galeria">
+                        </div>
+        </section>
+     <script src="javaaa/scrip.js"></script>   
+
+</body>
+</html>

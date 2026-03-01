@@ -1,0 +1,86 @@
+/* EMPEZAMOS A DARLE ESTILOS A NUESTRO HTML POR MEDIO DE SUS CLASES O ID*/
+
+body { /* cuerpo de la pagina */
+    background-color: #f0f2f5;/* el color de fondo */
+    padding: 20px; /* define el espacio */
+}
+
+.contenedor-principal {
+    display: flex;/* distribuye el contenedor */
+    justify-content: space-around;/* hace que los elementos tengan la misma cantidad de espacio a su izquierda y a su derecha */
+    flex-wrap: wrap; /* hará que los elementos se ajusten al viewport width del usuario */
+    gap: 20px;/* define el espacio o entre los elementos hijos */
+    margin-bottom: 30px;/* crea un espacio por fuera del borde del elemento */
+}
+
+/* estilos del Formulario */
+.seccion-formulario {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;/* hace que las esquinas se vean redondas */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);/* efecto de sombras */
+    width: 300px;/* el ancho */
+}
+
+.campo { /* el campo de los imput*/
+    margin-bottom: 15px;
+}
+
+.campo label { /* subtitulado */
+    display: block; /* ocupa todo el ancho disponible */
+    margin-bottom: 5px;
+    font-weight: bold; /* define el grosor de las letras */
+}
+
+input[type="text"] {
+    width: 100%; /* comportamiento elástico de tus cuadros de entrada */
+    padding: 8px;
+    border: 1px solid #ccc; /* borde solido */
+    border-radius: 4px;
+}
+
+#botonGenerar { /* le damos estilo al boton con el id */
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white; /* color del texto*/
+    border: none; /* sin borde */
+    border-radius: 4px;
+    cursor: pointer; /* cambia el icono del ratón */
+    font-size: 16px; /* tamaño de la letra */
+}
+
+/* Estilos de la Tarjeta */
+.tarjeta {
+    width: 250px;
+    padding: 20px;
+    background-color: #4a90e2; /* Color por defecto */
+    border-radius: 12px;
+    text-align: center; /* alinea el texto al centor */
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease; /* desvanecido suave*/
+}
+
+.foto-perfil { /* icono del perfil */
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 80px;
+    height: 80px;/* alto del icono */
+    line-height: 80px;/* centra el icono verticalmete */
+    border-radius: 50%;
+    margin: 0 auto 15px;/* centra el circulo de el icono*/
+}
+
+/* Estilos de la Galería */
+.rejilla-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Clase para las tarjetas guardadas (un poco más pequeñas) */
+.tarjeta-guardada {
+    transform: scale(0.9);/* modifica el tamaño del elemento */
+}
